@@ -1,0 +1,30 @@
+.Simpson {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background: #61dafb;
+    box-sizing: border-box;
+    margin: 25px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.imageSimpsonFamily{
+    width: 700px;
+}
+
+.simpsonImage {
+    width: 200px;
+}
