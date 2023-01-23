@@ -1,8 +1,7 @@
-import {axiosService} from "./axiosService";
+import {axiosJsonService} from "./axiosJsonService";
 
 const postService = {
-    getAll: () => axiosService.get('/posts'),
-    getOne: (id) => axiosService.get('/posts/${id}')
+    getAll: () => axiosJsonService.get('/posts')
 }
 
 export {

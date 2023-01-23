@@ -1,13 +1,15 @@
-import {Posts} from "./components/Posts/Posts";
+// import {Posts} from "./components";
+import {Launches} from "./components/Launches/Launches";
 
 const App = () => {
-  return (
-    <div>
-      <Posts/>
-    </div>
-  );
+    return (
+        <div>
+            {/*<Posts/>*/}
+            <Launches/>
+        </div>
+    );
 }
 
 export {
-  App
+    App
 };
