@@ -1,7 +1,7 @@
 import {axiosJsonService} from "./axiosJsonService";
 
 const postService = {
-    getAll: () => axiosJsonService.get('/posts')
+    getAllPosts: () => axiosJsonService.get('/posts')
 }
 
 export {

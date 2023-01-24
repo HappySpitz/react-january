@@ -8,13 +8,20 @@ const [posts, setPosts] = useState([]);
 const [postDetails, setPostDetails] = useState(null);
 
 useEffect(() => {
-    postService.getAll().then(value => value.data).then(value => setPosts([...value]))
+    postService.getAllPosts().then(value => value.data).then(value => setPosts([...value]))
 }, [])
 
     return (
         <div>
             <h1>Post Details</h1>
-            {postDetails && <div><div>Id: {postDetails.id}</div> <div>UserId: {postDetails.userId}</div> <div>Title: {postDetails.title}</div> <div>Body: {postDetails.body}</div></div>}
+            {postDetails &&
+                <div>
+                    <div>Id: {postDetails.id}</div>
+                    <div>UserId: {postDetails.userId}</div>
+                    <div>Title: {postDetails.title}</div>
+                    <div>Body: {postDetails.body}</div>
+                </div>
+            }
 
             <hr/>
 
