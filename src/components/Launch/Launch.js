@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Launch = ({launch}) => {
-    if (launch.launch_year !== '2020') {
         return (
             <div>
                 <div>Mission_name: {launch.mission_name}</div>
@@ -9,7 +8,6 @@ const Launch = ({launch}) => {
                 <img src={launch.links.mission_patch_small} alt={launch.mission_name}/>
             </div>
         );
-    }
 };
 
 export {

@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
 import {userService} from "../../services";
-
 import {User} from "../User/User";
 
 const Users = () => {

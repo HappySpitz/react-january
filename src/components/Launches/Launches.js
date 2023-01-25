@@ -7,7 +7,7 @@ const Launches = () => {
     const [launches, setLaunches] = useState([]);
 
     useEffect(() => {
-        axiosSpacexService.then(value => value.data).then(value => setLaunches([...value]))
+        axiosSpacexService.then(value => value.data).then(value => setLaunches(value.filter(item => item.launch_year !== '2020')))
     }, [])
 
     return (
