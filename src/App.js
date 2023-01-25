@@ -1,15 +1,11 @@
-// import {Posts} from "./components";
-
-import {Launches} from "./components";
-
-// import {Users} from "./components";
+import {Posts, Users, Launches} from "./components";
 
 const App = () => {
     return (
         <div>
-            {/*<Posts/>*/}
+            <Posts/>
             <Launches/>
-            {/*<Users/>*/}
+            <Users/>
         </div>
     );
 }
