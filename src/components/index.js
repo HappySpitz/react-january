@@ -5,3 +5,7 @@ export * from './UsersAndComments/UserForm/UserForm';
 export * from './UsersAndComments/Comments/Comments';
 export * from './UsersAndComments/Comment/Comment';
 export * from './UsersAndComments/CommentForm/CommentForm';
+
+export * from './Cars/Cars/Cars';
+export * from './Cars/Car/Car';
+export * from './Cars/CarForm/CarForm';
