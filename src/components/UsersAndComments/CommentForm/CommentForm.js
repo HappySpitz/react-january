@@ -19,8 +19,6 @@ const CommentForm = ({setComments}) => {
 
     return (
         <form onSubmit={handleSubmit(submit)}>
-            <input type="text" placeholder={'postId'} {...register('postId')}/>
-            {errors.postId && <span>{errors.postId.message}</span>}
             <input type="text" placeholder={'name'} {...register('name')}/>
             {errors.name && <span>{errors.name.message}</span>}
             <input type="text" placeholder={'email'} {...register('email')}/>
