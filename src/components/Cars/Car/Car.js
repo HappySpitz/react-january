@@ -3,11 +3,14 @@ import {carService} from "../../../services";
 const Car = ({car,setUpdateCar, setCars}) => {
     const {id, brand, price, year} = car;
 
-    const deleteCarById = (id) => {
-       carService.deleteById(id).then(async () => {
+    const deleteCarById = async (id) => {
+       try {
+           await carService.deleteById(id)
            const {data} = await carService.getAll()
            setCars([...data])
-       }).catch(err => console.log(err))
+       } catch (e) {
+           console.log(e);
+       }
     }
 
     return (
