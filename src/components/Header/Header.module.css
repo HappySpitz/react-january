@@ -1,0 +1,17 @@
+.Header {
+    height: 100px;
+    background-color: rgba(234, 135, 206, 0.62);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Header a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.Header a[class='active']{
+    color: rgba(84, 49, 74, 0.62);
+}
