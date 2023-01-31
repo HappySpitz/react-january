@@ -7,7 +7,6 @@ const TodosPage = () => {
     return (
         <div>
             <Todos/>
-            <Outlet/>
         </div>
     );
 };

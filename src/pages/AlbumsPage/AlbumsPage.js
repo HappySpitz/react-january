@@ -7,7 +7,6 @@ const AlbumsPage = () => {
     return (
         <div>
             <Albums/>
-            <Outlet/>
         </div>
     );
 };
