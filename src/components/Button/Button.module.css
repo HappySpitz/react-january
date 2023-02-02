@@ -1,0 +1,16 @@
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    color: white;
+    height: 20px;
+    width: 60px;
+    margin: 20px;
+}
+
+.Button:hover{
+    background-color: red;
+    color: pink;
+    cursor: pointer;
+}

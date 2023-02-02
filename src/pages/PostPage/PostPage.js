@@ -1,11 +1,10 @@
 import React from 'react';
-import {useLocation, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 
 import {Post} from "../../components";
 
 const PostPage = () => {
     const {postId} = useParams();
-
     return (
         <div>
             <Post postId={postId}/>
