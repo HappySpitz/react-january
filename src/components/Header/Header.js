@@ -12,9 +12,9 @@ const Header = () => {
             </div>
             <hr/>
             <div style={{width: '45%'}}>
-                {selectedPost && selectedPost.title}
+                {selectedPost && <div>SelectedPost: {selectedPost.title}</div>}
                 <hr/>
-                {apiPost && apiPost.title}
+                {apiPost && <div>ApiPost: {apiPost.title}</div>}
             </div>
         </div>
     );
