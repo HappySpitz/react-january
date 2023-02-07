@@ -3,7 +3,7 @@ import {useSelector} from "react-redux";
 
 const Header = () => {
     const {selectedUser} = useSelector(state => state.users);
-    const {selectedPost, apiPost} = useSelector(state => state.posts);
+    const {selectedPost, apiPost, errors, loading} = useSelector(state => state.posts);
     
     return (
         <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
@@ -14,6 +14,8 @@ const Header = () => {
             <div style={{width: '45%'}}>
                 {selectedPost && <div>SelectedPost: {selectedPost.title}</div>}
                 <hr/>
+                {errors && JSON.stringify(errors)}
+                {loading && <h1>Loading...........</h1>}
                 {apiPost && <div>ApiPost: {apiPost.title}</div>}
             </div>
         </div>
