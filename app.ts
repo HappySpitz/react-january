@@ -1,6 +1,20 @@
 // 1) створити інтерфейс на основі цього объекта:
 //     Зверніть увагу там де масиви... в них може бути багато однотипних обїектів
 
+interface ICors{
+    flight: number,
+    core: {
+        reuse_count: number,
+        status: string
+    }
+}
+
+interface IPayloads{
+    payload_type: string,
+    payload_mass_kg: number,
+    payload_mass_lbs: number
+}
+
 interface ILaunch {
     mission_name: string,
     launch_date_local: string,
@@ -14,24 +28,10 @@ interface ILaunch {
     rocket: {
     rocket_name: string,
         first_stage: {
-        cores: [
-            {
-                flight: number,
-                core: {
-                    reuse_count: number,
-                    status: string
-                }
-            }
-        ]
+        cores: ICors[]
     },
     second_stage: {
-        payloads: [
-            {
-                payload_type: string,
-                payload_mass_kg: number,
-                payload_mass_lbs: number
-            }
-        ]
+        payloads: IPayloads[]
     }
 }
 }
